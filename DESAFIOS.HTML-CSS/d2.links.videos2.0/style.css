@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #010626;
+    --cor1: #022859;
+    --cor2: #034C8C;
+    --cor3: #a02405;
+    --cor4:  #F2CA50;
+    --cor5: #03091f;
+
+    --fonte-especial:'Bebas Neue'
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor0));
+    min-height: 155px;
+    text-align: center;
+    padding-top: 45px;
+    
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.363);
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+
+}
+
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.363);
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s ;
+
+
+}
+ nav > a:hover{
+    color: var(--cor2);
+
+ }
+
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px; 
+    padding: 20px 0px;
+    background-image:linear-gradient(to bottom ,var(--cor2), var(--cor3));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+main > h1{
+    font-family: var(--fonte-especial);
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+
+main > img{
+    columns: 4;
+}
+
+main img.hardware{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    text-align: center;
+    
+
+
+}
+
+
+
+
+
+
+main img.HTML{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+}
+
+main img.JS{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+}
+
+main img.PY{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+}
