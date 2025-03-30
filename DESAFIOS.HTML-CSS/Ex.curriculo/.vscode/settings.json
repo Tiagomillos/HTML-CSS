@@ -1,0 +1,6 @@
+{
+    "powermode.enabled": false,
+    "powermode.presets": "particles",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

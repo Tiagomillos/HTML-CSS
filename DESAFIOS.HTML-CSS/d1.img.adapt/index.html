@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="coin.ico" type="image/x-icon">
+    <title>Imagem adaptada</title>
+</head>
+<body>
+    <h1><mark style="background-color: darkmagenta;">Imagem super dinâmica</mark></h1>
+    <p>Esta imagem mudára a partir do tamanho da sua tela.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/img.pequeno.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/img.medio.png" type="image/png">
+        <img src="imagens/img.grande.png" alt="imagem flexível">
+        
+
+    </picture>
+
+    </body>
+</html>
