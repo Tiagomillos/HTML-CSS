@@ -3,4 +3,4 @@
 
  Estou criando sites e agora vou gerenciar meus repositórios!!!
 
-<a href="file:///home/tiago/Documentos/estudos/HTML-CSS/exercicios/ex021/caixa02.html/index.html"> Executar o exercício 021<a/>
+<a href="file:///home/tiago/Documentos/estudos/HTML-CSS/DESAFIOS.HTML-CSS/Ex.curriculo/index.html"> Executar o meu projeto pessoal<a/>
