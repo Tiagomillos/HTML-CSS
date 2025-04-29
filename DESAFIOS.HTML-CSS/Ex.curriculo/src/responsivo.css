@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    overflow: hidden;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .apresentacao {
+    padding: 1rem;
+    text-align: justify;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+  
+  ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .curiosidade {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividade para celulares */
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .apresentacao {
+      font-size: 1rem;
+      padding: 1rem 0.5rem;
+    }
+  
+    ul {
+      padding-left: 1rem;
+    }
+  
+    .curiosidade {
+      font-size: 1.2rem;
+    }
+  }
+  
