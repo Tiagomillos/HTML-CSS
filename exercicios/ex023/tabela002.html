@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+
+        caption {
+            font-size:1.5em ;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(13, 23, 83);
+            color: white;
+
+        }
+
+        thead, tfoot {
+            background-color: rgb(40, 209, 6);
+            color: rgb(255, 255, 255);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(40, 209, 6);
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: rgba(73, 72, 2, 0.753);
+            color: white;
+        }
+
+         tbody > tr:nth-child(even) { /* 2n */
+            background-color: rgba(228, 227, 159, 0.753);
+            
+        }
+
+        
+
+        td .num {
+        text-align: right;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION
+        THEAD 
+           TR, TD, TH
+
+        
+        TBODY 
+           TR, TD, TH
+
+
+
+        TFOOT 
+           TR, TD, TH
+     -->
+
+     <table>
+        <caption>Estados Brasileiros e suas populações</caption>
+        
+        <thead>                         <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 200px;">População</th>
+        </tr>
+        
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>218.920.589</strong></td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            
+           
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num" >21 292 666</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 366 189</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 150 143</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 516 840</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 422 973</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 616 621</td>
+            </tr>
+            
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 187 103</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 690 745</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 252 502</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 113 540</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 064 000</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 064 052</td>
+
+            </tr>
+
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 365 351</td>
+            </tr>
+
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 059 905</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 622 916</td>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 094 325</td>
+            </tr>
+
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 318 822</td>
+            </tr>
+
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 281 480</td>
+            </tr>
+
+            <tr>
+                <td>Amapá</td>
+                <td class="num">861 773</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">652 713</td>
+            </tr>
+
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 607 363</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 815 278</td>
+            </tr>
+
+            <tr>
+                <td>Acre</td>
+                <td class="num">881 935</td>
+            </tr>
+
+            <tr>
+                <td>Matogrosso</td>
+                <td class="num">3 526 220</td>
+            </tr>
+
+            <tr>
+                <td>Matogrosso do Sul</td>
+                <td class="num">2 778 986</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 252 502</td>
+            </tr>
+
+            <tr>
+
+            </tr>
+
+        </tbody>
+
+        
+        
+
+
+
+     </table>
+    
+</body>
+</html>
