@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Desafio de notas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse
+            ;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:darkblue ;
+            color: white;
+        }
+
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio de tabela de notas</h1>
+    <table>
+        <caption>Média 3*Ano</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Área</th>
+                <th scope="col">Disciplinas</th>
+                <th scope="colgroup">Notas</th>
+                <th rowspan="3" scope="rowgroup">Notas 1</th>
+                <th rowspan="3" scope="rowgroup">Notas 2</th>
+                <th scope="col">Média</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Exatas</th>
+                <th>Matemática</th>
+                <td class="num">8.0</td>
+                <td class="num">7.5</td>
+                <td class="num">7.75</td>
+                <td class="med">9.5</td>
+            </tr>
+
+            <tr>
+                <th>Física</th>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="med">0.0</td>
+            </tr>
+
+            <tr>
+                <th>Química</th>
+                <td class="num">7.0</td>
+                <td class="num">8.0</td>
+                <td class="num">7.5</td>
+                <td class="med">8.0</td>
+            </tr>
+            
+            <tr>
+                <th>Biologia</th>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="med">0.0</td>
+            </tr>
+            
+
+
+        </tbody>
+    </table>
+
+   
+    
+</body>
+</html>
