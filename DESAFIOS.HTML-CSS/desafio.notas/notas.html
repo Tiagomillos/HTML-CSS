@@ -8,79 +8,117 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to left, #590764, #251e85, #000203);
+        }
+
+        h1 {
+            font-weight: bold;
+            color: white;
         }
 
         table {
-            border-collapse: collapse
-            ;
+            border-collapse: collapse;
+            
+            
         }
 
-        caption {
+        .cabecalho {
             font-size: 1.3em;
             font-weight: bold;
             padding: 10px;
-            background-color:darkblue ;
+            background-color:rgb(56, 0, 82) ;
             color: white;
+           
         }
 
 
         th, td {
-            border: 1px solid black;
+            border: 1px solid rgb(255, 233, 233);
             padding: 10px;
+            color: white;
+
 
         }
+
+        .notax {
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
     <h1>Desafio de tabela de notas</h1>
     <table>
-        <caption>Média 3*Ano</caption>
+  <thead class="cabecalho">
+    <tr>
+      <th scope="col" rowspan="2">Área</th>
+      <th scope="col" rowspan="2">Disciplina</th>
+      <th scope="colgroup" colspan="2">Notas</th>
+      <th scope="col" rowspan="2">Média</th>
+    </tr>
+    <tr>
+      <th scope="col">Nota 1</th>
+      <th scope="col">Nota 2</th>
+    </tr>
+  </thead>
 
-        <thead>
-            <tr>
-                <th scope="col">Área</th>
-                <th scope="col">Disciplinas</th>
-                <th scope="colgroup">Notas</th>
-                <th rowspan="3" scope="rowgroup">Notas 1</th>
-                <th rowspan="3" scope="rowgroup">Notas 2</th>
-                <th scope="col">Média</th>
-            </tr>
-        </thead>
+  <tbody>
+    <!-- Exatas -->
+    <tr>
+      <th scope="rowgroup" rowspan="4">Exatas</th>
+      <th>Matemática</th>
+      <td class="num">8.0</td>
+      <td class="num">7.5</td>
+      <td class="num">7.75</td>
+    </tr>
+    <tr>
+      <th>Física</th>
+      <td class="num">0.0</td>
+      <td class="num">0.0</td>
+      <td class="num">0.0</td>
+    </tr>
+    <tr>
+      <th>Química</th>
+      <td class="num">7.0</td>
+      <td class="num">8.0</td>
+      <td class="num">7.5</td>
+    </tr>
+    <tr>
+      <th>Biologia</th>
+      <td class="num">0.0</td>
+      <td class="num">0.0</td>
+      <td class="num">0.0</td>
+    </tr>
 
-        <tbody>
-            <tr>
-                <th rowspan="3" scope="rowgroup">Exatas</th>
-                <th>Matemática</th>
-                <td class="num">8.0</td>
-                <td class="num">7.5</td>
-                <td class="num">7.75</td>
-                <td class="med">9.5</td>
-            </tr>
+    <!-- Média de Exatas -->
+    <tr class="cabecalho">
+      <th  scope="col" colspan="4">Média de Exatas</th>
+      <td class="num">0.0</td>
+    </tr>
 
-            <tr>
-                <th>Física</th>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="med">0.0</td>
-            </tr>
+    <!-- Humanas -->
+    <tr>
+      <th scope="rowgroup" rowspan="2">Humanas</th>
+      <th>História</th>
+      <td class="num">0.0</td>
+      <td class="num">0.0</td>
+      <td class="num">0.0</td>
+    </tr>
+    <tr>
+      <th>Geografia</th>
+      <td class="num">0.0</td>
+      <td class="num">0.0</td>
+      <td class="num">0.0</td>
+    </tr>
 
-            <tr>
-                <th>Química</th>
-                <td class="num">7.0</td>
-                <td class="num">8.0</td>
-                <td class="num">7.5</td>
-                <td class="med">8.0</td>
-            </tr>
-            
-            <tr>
-                <th>Biologia</th>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="med">0.0</td>
-            </tr>
-            
+    <tr class="cabecalho">
+        <th scope="col" colspan="4">Média de Humanas</th>
+        <td class="num">0.0</td>
+    </tr>
+
+  </tbody>
+</table>
+
 
 
         </tbody>
